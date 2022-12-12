@@ -11,5 +11,5 @@ TurbosTimeOracle = { git = "https://github.com/turbos-finance/turbos-oracle.git"
 turbos_oracle_samples = "0x0"
 
 [dev-addresses]
-turbos_price_oracle = "0x3016c3368a75b07f1ec36cd66b9bebd9b0b359a0"
+turbos_price_oracle = "0x892c7127901627c452aba4ffaf6320c1515285db"
 turbos_time_oracle = "0xeef3fbe65868da00192e59371e98ec07c6017f00"

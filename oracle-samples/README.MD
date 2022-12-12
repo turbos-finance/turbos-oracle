@@ -12,9 +12,8 @@ price feed
 sui client call \
 --function test_price_feed \
 --module price \
---package 0xaaae0d082b7959d5919f578bc1990464c6d1339e \
---args 0xc9b7b0d3aa42237e76d1af758a7bb90215e70569 \
---type-args 0x33e5b1bafadeca4c678f7bae6cea3d326a44a02a::btc::BTC \
+--package 0x1c0fe71a65fb991f8e03a67c2059861f26ec765e \
+--args 0x0fee5c8f5f36bd88f03d6d09823f5d0c35055f1d \
 --gas-budget 3000
 ```
 
