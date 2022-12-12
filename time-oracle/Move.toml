@@ -1,0 +1,12 @@
+[package]
+name = "TurbosTimeOracle"
+version = "0.0.1"
+
+[dependencies]
+Sui = { git = "https://github.com/MystenLabs/sui.git", subdir = "crates/sui-framework", rev = "devnet" }
+
+[addresses]
+turbos_time_oracle = "_"
+
+[dev-addresses]
+turbos_time_oracle = "0x0"

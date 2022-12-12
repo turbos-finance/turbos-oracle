@@ -1,0 +1,15 @@
+[package]
+name = "TurbosOracleSamples"
+version = "0.0.1"
+
+[dependencies]
+Sui = { git = "https://github.com/MystenLabs/sui.git", subdir = "crates/sui-framework", rev = "devnet" }
+TurbosPriceOracle = { git = "https://github.com/turbos-finance/turbos-oracle.git", subdir = "price-oracle", rev = "devnet" }
+TurbosTimeOracle = { git = "https://github.com/turbos-finance/turbos-oracle.git", subdir = "time-oracle", rev = "devnet" }
+
+[addresses]
+turbos_oracle_samples = "0x0"
+
+[dev-addresses]
+turbos_price_oracle = "0x3016c3368a75b07f1ec36cd66b9bebd9b0b359a0"
+turbos_time_oracle = "0xeef3fbe65868da00192e59371e98ec07c6017f00"
