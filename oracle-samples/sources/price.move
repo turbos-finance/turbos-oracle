@@ -23,6 +23,7 @@ module turbos_oracle_samples::price {
 		let token_symbol = turbos_price::get_symbol(price_feed_storage, btc_price_id);
 		let token_price = turbos_price::get_price(price_feed_storage, btc_price_id);
 		let token_decimal = turbos_price::get_decimal(price_feed_storage, btc_price_id);
+
 		transfer::transfer(CurrentTokenPrice { 
 			id: object::new(ctx),
 			symbol: token_symbol,
