@@ -86,7 +86,7 @@ module turbos_price_oracle::turbos_price {
         });
     }
 
-    entry fun add_feeder(
+    public entry fun add_feeder(
         _: &mut AuthorityCap,
         price_feed_storage: &mut PriceFeedStorage,
         feeder_address: address,
@@ -97,7 +97,7 @@ module turbos_price_oracle::turbos_price {
         vector::push_back(&mut price_feed_storage.feeders, feeder_address);
     }
 
-    entry fun remove_feeder(
+    public entry fun remove_feeder(
         _: &mut AuthorityCap,
         price_feed_storage: &mut PriceFeedStorage,
         feeder_address: address,
@@ -108,7 +108,7 @@ module turbos_price_oracle::turbos_price {
         vector::remove(&mut price_feed_storage.feeders, index);
     }
 
-    entry fun create_price_feed(
+    public entry fun create_price_feed(
         _: &mut AuthorityCap,
         price_feed_storage: &mut PriceFeedStorage,
         symbol: String,
@@ -128,7 +128,7 @@ module turbos_price_oracle::turbos_price {
         });
     }
 
-    entry fun update_price_feed_decimal(
+    public entry fun update_price_feed_decimal(
         _: &mut AuthorityCap,
         price_feed_storage: &mut PriceFeedStorage,
         price_id: String,
@@ -141,7 +141,7 @@ module turbos_price_oracle::turbos_price {
         price_feed.decimal = decimal;
     }
 
-    entry fun update_price(
+    public entry fun update_price(
         price_feed_storage: &mut PriceFeedStorage,
         price_id: String,
         price: u64,
